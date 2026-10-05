@@ -1,0 +1,1 @@
+{"uuid": "1225d7ca-4200-4c31-8a93-ad02dc015150", "befores": [{"name": "locator_scooter", "status": "passed", "start": 1791197702864, "stop": 1791197702864}], "afters": [{"name": "locator_scooter::<lambda>", "start": 1791197705492}], "start": 1791197702864, "stop": 1791197705492}
