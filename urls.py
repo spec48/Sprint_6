@@ -1,2 +1,2 @@
-MAIN_PAGE_URL = 'https://qa-scooter.education-services.ru/'
-ORDER_PAGE_URL = 'https://qa-scooter.education-services.ru/order'
+base_url = 'https://qa-scooter.education-services.ru/'
+order_page_url = base_url + 'order/'

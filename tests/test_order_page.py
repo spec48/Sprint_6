@@ -16,7 +16,7 @@ class TestOrderPage:
                              ]
                              )
     def test_create_order_page(self, order_page, locator, order_data):
-        order_page.go_url(MAIN_PAGE_URL)
+        order_page.go_url(base_url)
         order_page.scroll_to_element(locator)
         order_page.click_element(locator)
         order_page.fill_out_the_order_pages(order_data)
