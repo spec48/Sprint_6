@@ -19,11 +19,8 @@ class TestTransitionByUrls:
     @allure.description('Тест проверяет, что если нажать на логотип Яндекса, в новом окне через редирект откроется'
                         ' главная страница Дзена')
     @allure.step('Клик на логотип Яндекса и переход на главную страницу Дзена')
-    def test_check_go_to_main_page_dzen(self, main_page, driver):
+    def test_check_go_to_main_page_dzen(self, main_page):
         main_page.go_url(base_url)
         main_page.click_element(MainPageLocators.YANDEX_LOGO)
         main_page.switch_to_another_window()
-        try:
-            assert main_page.find_element(MainPageDzenLocator.DZEN_LOGO).is_displayed()
-        except TimeoutException:
-            assert False, f'Не открылась главная страница Дзена. Открылась страница: {driver.current_url}'
+        assert main_page.find_element(MainPageDzenLocator.DZEN_LOGO).is_displayed()
